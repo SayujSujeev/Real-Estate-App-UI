@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:real_estate_app/model/house.dart';
-import 'package:real_estate_app/screens/details/components/buttom_buttons.dart';
+import 'package:real_estate_app/screens/details/components/bottom_buttons.dart';
 import 'package:real_estate_app/screens/details/components/carousel_images.dart';
 import 'package:real_estate_app/screens/details/components/custom_app_bar.dart';
 import 'package:real_estate_app/screens/details/components/house_details.dart';

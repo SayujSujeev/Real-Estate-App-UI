@@ -15,8 +15,6 @@ class HouseDetails extends StatefulWidget {
 class _HouseDetailsState extends State<HouseDetails> {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-
     return Expanded(
       child: ListView(
         physics: BouncingScrollPhysics(),
@@ -46,7 +44,6 @@ class _HouseDetailsState extends State<HouseDetails> {
                     ),
                     Text(
                       widget.house.address,
-                      overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         fontSize: 15,
                         color: black.withOpacity(0.4),
@@ -66,14 +63,12 @@ class _HouseDetailsState extends State<HouseDetails> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(
-              left: appPadding,
-              bottom: appPadding,
-            ),
+            padding:
+                const EdgeInsets.only(left: appPadding, bottom: appPadding),
             child: Text(
               'House information',
               style: TextStyle(
-                fontSize: 17,
+                fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -92,12 +87,11 @@ class _HouseDetailsState extends State<HouseDetails> {
                   child: Container(
                     width: 100,
                     decoration: BoxDecoration(
-                      color: white,
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(
-                        color: black.withOpacity(0.4),
-                      ),
-                    ),
+                        color: white,
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: black.withOpacity(0.4),
+                        )),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -113,9 +107,9 @@ class _HouseDetailsState extends State<HouseDetails> {
                         ),
                         Text(
                           'Square foot',
-                          maxLines: 1,
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
                       ],
@@ -130,12 +124,11 @@ class _HouseDetailsState extends State<HouseDetails> {
                   child: Container(
                     width: 100,
                     decoration: BoxDecoration(
-                      color: white,
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(
-                        color: black.withOpacity(0.4),
-                      ),
-                    ),
+                        color: white,
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: black.withOpacity(0.4),
+                        )),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -151,9 +144,9 @@ class _HouseDetailsState extends State<HouseDetails> {
                         ),
                         Text(
                           'Bedrooms',
-                          maxLines: 1,
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
                       ],
@@ -168,12 +161,11 @@ class _HouseDetailsState extends State<HouseDetails> {
                   child: Container(
                     width: 100,
                     decoration: BoxDecoration(
-                      color: white,
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(
-                        color: black.withOpacity(0.4),
-                      ),
-                    ),
+                        color: white,
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: black.withOpacity(0.4),
+                        )),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -189,9 +181,9 @@ class _HouseDetailsState extends State<HouseDetails> {
                         ),
                         Text(
                           'Bathrooms',
-                          maxLines: 1,
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
                       ],
@@ -206,12 +198,11 @@ class _HouseDetailsState extends State<HouseDetails> {
                   child: Container(
                     width: 100,
                     decoration: BoxDecoration(
-                      color: white,
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(
-                        color: black.withOpacity(0.4),
-                      ),
-                    ),
+                        color: white,
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: black.withOpacity(0.4),
+                        )),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -227,9 +218,9 @@ class _HouseDetailsState extends State<HouseDetails> {
                         ),
                         Text(
                           'Garages',
-                          maxLines: 1,
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
                       ],
@@ -248,8 +239,8 @@ class _HouseDetailsState extends State<HouseDetails> {
             child: Text(
               widget.house.description,
               style: TextStyle(
-                color: black.withOpacity(0.6),
-                height: 1.5
+                color: black.withOpacity(0.4),
+                height: 1.5,
               ),
             ),
           )
