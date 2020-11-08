@@ -3,7 +3,7 @@
 ## [Watch it on YouTube]()
 
 
-Real Estate app UI using flutter,This project consist of Two Screens.
+Real Estate app UI using flutter,This project consist of Two Screens
 
 ### :heart: Found this project useful?
 
